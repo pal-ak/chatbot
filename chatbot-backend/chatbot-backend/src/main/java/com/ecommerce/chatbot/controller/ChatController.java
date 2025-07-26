@@ -21,7 +21,7 @@ public class ChatController {
     private MessageRepository messageRepository;
 
     @Autowired
-    private GroqLLMService groqService;
+    private ChatBotService chatBotService;
 
     @PostMapping
     public ChatResponse chat(@RequestBody ChatRequest request) {
